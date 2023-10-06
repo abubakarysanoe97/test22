@@ -1,6 +1,6 @@
 package appdevtest;
 
-public class Boat extends Vehicle{
+public class Boat extends Vehicle implements Driveable{
     private boolean hasGPS;
 
 
@@ -26,5 +26,10 @@ public class Boat extends Vehicle{
         } else {
             System.out.println("This boat does not have GPS.");
         }
+    }
+
+    @Override
+    public void printSpeed(Vehicle vehicle) {
+
     }
 }

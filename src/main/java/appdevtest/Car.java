@@ -1,6 +1,6 @@
 package appdevtest;
 
-public class Car extends Vehicle {
+public class Car extends Vehicle implements Driveable {
     private int numberOfDoors;
     private float extraTax =.05f;
 
@@ -32,6 +32,11 @@ public class Car extends Vehicle {
     }
     public float getPriceAfterTax() {
         return (getPrice() * (TAX_AMT +extraTax ) ) + getPrice();
+    }
+
+    @Override
+    public void printSpeed(Vehicle vehicle) {
+
     }
 }
 
